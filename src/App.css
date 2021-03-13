@@ -1,19 +1,11 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
 .App {
   text-align: center;
+  padding: 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,7 +14,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -35,4 +27,73 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.pullLeft {
+  float: left;
+}
+
+.card-body{
+  padding: 1rem 0.5rem 0 0;
+}
+
+.card-title{
+  font-size: 1rem;
+  width: 90%;
+  text-align: left;
+}
+
+.thumbnails{
+  float: right;
+  width: 10%;
+}
+
+.hide {
+  display: none;
+}
+
+.on-hover:hover{
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+.on-hover:hover .hide{
+  display: block;
+}
+
+.customHeight{
+  height:20px
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 40%;
+  padding: 20px;
+  margin-left: 51%;
+  top: 0%;
+}
+
+.playlist{
+    align-self: center;
+    width: 50%;
 }
